@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: debug-pod
+spec:
+  containers:
+  - image: pete911/debug-pod:latest
+    name: debug-pod
+    command:
+      - sleep
+      - "3600"
