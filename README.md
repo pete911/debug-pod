@@ -1,7 +1,15 @@
 # debug-pod
 
-kubernetes debug pod
+alpine container with installed packages:
 
- - copy/download [debug-pod.yaml](debug-pod.yaml) file
- - start pod `kubectl create -n <namespace> -f debug-pod.yaml`
- - exect inside `kubectl exec -it -n <namespace> debug-pod -- /bin/sh`
+```
+curl
+bind-tools
+openssl
+netcat-openbsd
+```
+
+## run
+
+ - default namespace, latest image - `kubectl run debug --image=pete911/debug-pod --rm -it --restart=Never -- sh`
+ - specify namespace and image - `kubectl run debug -n <namespace> --image=pete911/debug-pod:<version> --rm -it --restart=Never -- sh`
