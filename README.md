@@ -2,14 +2,13 @@
 
 # debug-pod
 
-alpine container with installed packages:
+alpine image with installed packages:
 
-```
-curl
-bind-tools
-openssl
-netcat-openbsd
-```
+ - [certinfo](https://github.com/pete911/certinfo)
+ - curl
+ - bind-tools
+ - openssl
+ - netcat-openbsd
 
 ## run
 
