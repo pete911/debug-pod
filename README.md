@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/pete911/debug-pod.svg?branch=master)](https://travis-ci.com/pete911/debug-pod)
+
 # debug-pod
 
 alpine container with installed packages:
