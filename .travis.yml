@@ -1,3 +1,6 @@
+env:
+  - VERSION="0.$TRAVIS_BUILD_NUMBER"
+
 git:
   depth: false
   quiet: true
@@ -11,8 +14,8 @@ services:
   - docker
 
 script:
-  - "VERSION=$TRAVIS_BUILD_NUMBER make image"
+  - "VERSION=$VERSION make image"
 
 after_success:
   docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD ;
-  VERSION=$TRAVIS_BUILD_NUMBER make push-image ;
+  VERSION=$VERSION make push-image ;
