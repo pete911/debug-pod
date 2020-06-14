@@ -2,7 +2,7 @@
 
 # debug-pod
 
-alpine image with installed packages:
+[debug pod](https://hub.docker.com/repository/docker/pete911/debug-pod) conatainer image with the following packages installed:
 
  - [certinfo](https://github.com/pete911/certinfo)
  - curl
