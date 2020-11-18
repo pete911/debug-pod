@@ -9,6 +9,7 @@
  - bind-tools
  - openssl
  - netcat-openbsd
+ - iputils
 
 ## run
 
