@@ -10,6 +10,7 @@
  - openssl
  - netcat-openbsd
  - iputils
+ - telnet
 
 ## run
 
