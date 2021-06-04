@@ -1,4 +1,4 @@
-FROM golang:1.16.4-alpine AS build
+FROM golang:1.16.5-alpine AS build
 RUN apk add --no-cache gcc libc-dev git
 
 RUN GO111MODULE=on go get github.com/pete911/certinfo@0.30
