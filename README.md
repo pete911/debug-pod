@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.com/pete911/debug-pod.svg?branch=master)](https://travis-ci.com/pete911/debug-pod)
-
 # debug-pod
 
 [debug pod](https://hub.docker.com/r/pete911/debug-pod) conatainer image with the following packages installed:
@@ -40,3 +38,8 @@ spec:
         type: Directory
 ```
 and then run `kubectl apply -f debug-pod.yaml`
+
+## release
+
+Releases are published to [dockerhub](https://hub.docker.com/repository/docker/pete911/debug-pod) when the new tag
+is created e.g. `git tag -m "add super cool feature" 0.33 && git push --follow-tags`
