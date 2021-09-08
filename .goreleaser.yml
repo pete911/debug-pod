@@ -1,4 +1,0 @@
-dockers:
-  - image_templates:
-      - "myuser/myimage:latest"
-      - "myuser/myimage:{{ .Tag }}"
