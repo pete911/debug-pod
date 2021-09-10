@@ -3,6 +3,8 @@
 [debug pod](https://hub.docker.com/r/pete911/debug-pod) conatainer image with the following packages installed:
 
  - [certinfo](https://github.com/pete911/certinfo)
+ - [ipcalc](https://github.com/pete911/ipcalc)
+ - [jwt](https://github.com/pete911/jwt)
  - curl
  - bind-tools
  - openssl
@@ -42,4 +44,4 @@ and then run `kubectl apply -f debug-pod.yaml`
 ## release
 
 Releases are published to [dockerhub](https://hub.docker.com/repository/docker/pete911/debug-pod) when the new tag
-is created e.g. `git tag -m "add super cool feature" 0.33 && git push --follow-tags`
+is created e.g. `git tag -m "add super cool feature" v1.0.0 && git push --follow-tags`
