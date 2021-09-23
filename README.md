@@ -3,7 +3,6 @@
 [debug pod](https://hub.docker.com/r/pete911/debug-pod) conatainer image with the following packages installed:
 
  - [certinfo](https://github.com/pete911/certinfo)
- - [ipcalc](https://github.com/pete911/ipcalc)
  - [jwt](https://github.com/pete911/jwt)
  - curl
  - bind-tools
