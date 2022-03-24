@@ -4,7 +4,7 @@ RUN apk add --no-cache gcc libc-dev git
 RUN GO111MODULE=on go get github.com/pete911/certinfo@v1.0.0
 RUN GO111MODULE=on go get github.com/pete911/jwt@v1.0.2
 
-FROM alpine:3.15.1
+FROM alpine:3.15.2
 
 RUN apk add --no-cache curl bind-tools openssl netcat-openbsd iputils busybox-extras
 COPY --from=build /go/bin/certinfo /bin/certinfo
