@@ -1,0 +1,14 @@
+name: pipeline
+
+on: [push]
+
+jobs:
+  docker-scan:
+    uses: pete911/github-actions/.github/workflows/docker-scan.yml@main
+  docker-push:
+    needs:
+      - docker-scan
+    uses: pete911/github-actions/.github/workflows/docker-push.yml@main
+    secrets:
+      DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USER }}
+      DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_PASSWORD }}
