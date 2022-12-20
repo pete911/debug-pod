@@ -1,5 +1,7 @@
 # debug-pod
 
+[![pipeline](https://github.com/pete911/debug-pod/actions/workflows/pipeline.yml/badge.svg)](https://github.com/pete911/debug-pod/actions/workflows/pipeline.yml)
+
 [debug pod](https://hub.docker.com/r/pete911/debug-pod) conatainer image with the following packages installed:
 
  - [certinfo](https://github.com/pete911/certinfo)
