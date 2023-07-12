@@ -1,4 +1,4 @@
-FROM golang:1.20.5-alpine AS build
+FROM golang:1.20.6-alpine AS build
 RUN apk add --no-cache gcc libc-dev git
 
 RUN go install github.com/pete911/certinfo@v1.0.13
