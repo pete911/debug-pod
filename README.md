@@ -7,6 +7,7 @@
  - [certinfo](https://github.com/pete911/certinfo)
  - [jwt](https://github.com/pete911/jwt)
  - curl
+ - jq
  - bind-tools
  - openssl
  - netcat-openbsd
