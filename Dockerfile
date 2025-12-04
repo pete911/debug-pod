@@ -4,7 +4,7 @@ RUN apk add --no-cache gcc libc-dev git
 RUN go install github.com/pete911/certinfo@v1.0.18
 RUN go install github.com/pete911/jwt@v1.0.5
 
-FROM alpine:3.22.2
+FROM alpine:3.23.0
 
 RUN apk add --no-cache curl bind-tools openssl netcat-openbsd iputils busybox-extras jq
 COPY --from=build /go/bin/certinfo /bin/certinfo
